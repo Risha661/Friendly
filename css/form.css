@@ -1,0 +1,133 @@
+.form {
+  max-width: 780px;
+  min-height: 592px;
+  border-radius: 20px;
+  background: #F2F0F1;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 100px;
+  box-sizing: border-box;
+}
+
+.form__title {
+  font-family: Comfortaa, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.form__text {
+  color: #282626;
+  text-align: center;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.form__text-ask {
+  margin-bottom: 20px;
+}
+
+.form__text-ask:first-of-type{
+  margin-bottom: 7px;
+}
+
+.form__text-orange {
+  color: #FF8A00;
+}
+
+.form__text-contacts {
+  margin-bottom: 15px;
+}
+
+.form__contact-block {
+  margin-bottom: 30px;
+}
+
+.form__link-phone {
+  color: #282626;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form__link-phone::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("/img/call.svg");
+  margin-right: 14px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form__link-mail {
+  color: #282626;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 30px;
+  display: block;
+}
+
+.form__link-mail::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background-image: url("/img/Vector.svg");
+  margin-right: 14px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form__text-bold {
+  font-weight: 550;
+}
+
+.form__form-block {
+  max-width: 280px;
+  margin: auto;
+}
+
+.form__label-text {
+  color: #282626;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  display: block;
+  text-align: left;
+}
+
+.form__label-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__label-text:last-child {
+  margin-bottom: 35px;
+}
+
+.form__input {
+  display: block;
+  margin: auto;
+  width: 280px;
+  height: 40px;
+}
+
+.form__btn {
+  background: #282626;
+  width: 220px;
+  height: 40px;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 12px;
+  font-weight: 550;
+  line-height: 16px;
+  text-transform: uppercase;
+}

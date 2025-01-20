@@ -1,0 +1,20 @@
+.help {
+  margin-bottom: 50px;
+}
+
+.help__title {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  color: #FF8A00;
+}
+
+.help__text-bold {
+  font-weight: 500;
+}
+
+.help__item {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+}
