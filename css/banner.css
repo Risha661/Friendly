@@ -3,8 +3,8 @@
   background-image: url("../img/two-dogs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 280px;
-  height: 332px;
+  max-width: 380px;
+  height: 450px;
   z-index: 0;
 }
 
@@ -16,4 +16,14 @@
 
 .banner__title-white {
   color: #FFF;
+}
+
+.banner__link-view {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .banner__link-view {
+    display: block;
+  }
 }

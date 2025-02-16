@@ -1,6 +1,48 @@
+.collage {
+  display: grid;
+  gap: 22px;
+}
+
 .collage__title {
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
   color: #000;
+}
+
+.collage__list {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 70px 70px 70px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .collage {
+    gap: 6px;
+  }
+
+  .collage__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collage {
+    gap: 10px;
+  }
+
+  .collage__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .collage {
+    gap: 10px;
+  }
 }

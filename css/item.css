@@ -1,9 +1,14 @@
 .item__title {
   font-family: "HelveticaNeueCyr";
-  font-weight: 550;
+  font-weight: 500;
   font-size: 30px;
   line-height: 40px;
   color: #282626;
+}
+
+.item__img {
+  max-width: 100%;
+  height: auto;
 }
 
 .item__description {
@@ -39,16 +44,31 @@
   .item__description {
     max-width: 360px;
   }
+
+  .item__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 768px) {
   .item__description {
     max-width: 230px;
   }
+
+  .item__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 320px) {
   .item__description {
     max-width: 130px;
+  }
+
+  .item__title {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
