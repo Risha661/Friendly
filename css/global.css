@@ -44,7 +44,7 @@ ol {
   counter-reset: myCounter;
 }
 
-li:before {
+li .help__item:before {
   content: counter(myCounter);
   counter-increment: myCounter;
   font-size: 50px;

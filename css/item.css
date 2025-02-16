@@ -1,0 +1,36 @@
+.item__title,
+.banner__title {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 40px;
+  color: #282626;
+}
+
+.item__description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.item__link,
+.banner__link {
+  color: #FF8A00;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.item__link::after,
+.banner__link::after {
+  content: "";
+  background-image: url("../img/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 16px;
+  margin-left: 15px;
+}
