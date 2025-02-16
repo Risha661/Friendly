@@ -1,3 +1,8 @@
+.project {
+  max-width: 1440px;
+  padding: 100px 0;
+}
+
 .project__title,
 .pets__title {
   font-family: "Comfortaa";
@@ -5,4 +10,92 @@
   line-height: 60px;
   font-weight: 400;
   color: #000;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.project__container-grid {
+  display: grid;
+  grid-template-columns: 680px 380px;
+  gap: 20px;
+}
+
+.project__list {
+  display: grid;
+  gap: 30px;
+}
+
+.project__item {
+  display: grid;
+  grid-template-columns: 280px max-content;
+  gap: 20px;
+}
+
+.item__wrapper {
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 15px;
+  padding: 5px 0 13px 0;
+}
+
+.item__link-top {
+  padding-top: 5px;
+}
+
+@media (max-width: 1024px) {
+  .project__container-grid {
+    grid-template-columns: 580px 280px;
+  }
+
+  .project__item {
+    grid-template-columns: 200px max-content;
+  }
+
+  .item__wrapper {
+    gap: 7px;
+    padding: 3px 0 0 0;
+  }
+
+  .item__link-top {
+    padding-top: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project__container-grid {
+    grid-template-columns: 400px 220px;
+  }
+
+  .project__item {
+    grid-template-columns: 160px max-content;
+    gap: 10px;
+  }
+
+  .item__wrapper {
+    gap: 3px;
+    padding: 0;
+  }
+
+  .item__link-top {
+    padding-top: 7px;
+  }
+}
+
+@media (max-width: 320px) {
+  .project__container-grid {
+    grid-template-columns: 270px;
+  }
+
+  .project__item {
+    grid-template-columns: 130px max-content;
+    gap: 10px;
+  }
+
+  .item__link-top {
+    padding-top: 3px;
+  }
 }

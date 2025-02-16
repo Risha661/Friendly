@@ -1,0 +1,19 @@
+.banner {
+  position: relative;
+  background-image: url("../img/two-dogs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 280px;
+  height: 332px;
+  z-index: 0;
+}
+
+.banner__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.banner__title-white {
+  color: #FFF;
+}
