@@ -43,22 +43,36 @@
 @media (max-width: 1024px) {
   .item__description {
     max-width: 360px;
+    font-size: 18px;
+    line-height: 26px ;
   }
 
   .item__title {
     font-size: 24px;
     line-height: 30px;
   }
+
+  .item__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 768px) {
   .item__description {
     max-width: 230px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .item__title {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .item__link {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

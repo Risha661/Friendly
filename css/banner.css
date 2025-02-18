@@ -12,18 +12,92 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+  max-width: 285px;
 }
 
 .banner__title-white {
+  position: absolute;
+  bottom: 40px;
   color: #FFF;
+  left: 10px;
 }
 
-.banner__link-view {
-  display: none;
+.banner__link {
+  position: absolute;
+  bottom: 37px;
+  right: 10px;
 }
+
 
 @media (max-width: 1024px) {
+  .banner {
+    max-width: 280px;
+    max-height: 332px;
+  }
+
+  .banner__title {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 260px;
+  }
+
+  .banner__title-white {
+    bottom: 46px;
+    left: 10px;
+  }
+
+  .banner__link {
+    bottom: 9px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    max-width: 220px;
+    max-height: 271px;
+  }
+
+  .banner__title {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 200px;
+  }
+
+  .banner__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .banner__title-white {
+    bottom: 39px;
+  }
+
+  .banner__link {
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner {
+    max-width: 270px;
+    max-height: 320px;
+  }
+
+  .banner__title {
+    line-height: 22px;
+    max-width: 250px;
+  }
+
   .banner__link-view {
-    display: block;
+    padding-top: 8px;
+  }
+
+  .banner__title-white {
+    bottom: 51px;
+  }
+
+  .banner__link {
+    bottom: 19px;
   }
 }
