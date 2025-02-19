@@ -79,6 +79,21 @@
     line-height: 20px;
     margin-bottom: 10px;
   }
+
+  .collage__list {
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(2, 53px);
+    gap: 20px;
+    max-width: 220px;
+  }
+
+  .collage__item-none {
+    display: none;
+  }
+
+  .collage__item-display {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -88,10 +103,21 @@
     margin-bottom: 10px;
   }
 
-  collage__link-view {
+  .collage__list {
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 53px;
+    row-gap: 10px;
+    max-width: 270px;
+  }
+
+  .collage__item-display,
+  .collage__item-none {
+    display: none;
+  }
+
+  .collage__link-view {
     font-size: 14px;
     line-height: 20px;
     padding-top: 24px;
   }
-
 }
