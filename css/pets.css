@@ -90,12 +90,12 @@
 
 @media (max-width: 1024px) {
   .pets {
-    padding-top: 38.5px;
-    padding-bottom: 80px;
+    padding-bottom: 102px;
   }
 
   .pets__container {
     width: 880px;
+    margin: 0 auto;
   }
 
   .pets__title {
@@ -182,12 +182,12 @@
 
 @media (max-width: 768px) {
   .pets {
-    padding-top: 31px;
-    padding-bottom: 60px;
+    padding-bottom: 66px;
   }
 
   .pets__container {
     width: 700px;
+    margin: 0 auto;
   }
 
   .pets__title {
@@ -278,12 +278,12 @@
 
 @media (max-width: 320px) {
   .pets {
-    padding-top: 31px;
     padding-bottom: 40px;
   }
 
   .pets__container {
     width: 270px;
+    margin: 0 auto;
   }
 
   .pets__title {
