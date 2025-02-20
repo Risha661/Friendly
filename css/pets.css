@@ -3,7 +3,8 @@
 }
 
 .pets__container {
-  max-width: 1180px;
+  position: relative;
+  width: 1180px;
   margin: 0 auto;
 }
 
@@ -16,17 +17,44 @@
 .pets__wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: auto;
-  column-gap: 48px;
-  row-gap: 20px;
+  grid-template-rows: 326px 356px;
+  row-gap: 48px;
+  column-gap: 20px;
 }
 
 .pets__img {
   margin-bottom: 20px;
   display: block;
+}
+
+.pets__img-1 {
+  max-height: 276px;
   width: 100%;
-  height: auto;
-  object-fit: cover;
+}
+
+.pets__img-2 {
+  max-height: 276px;
+  width: 100%;
+}
+
+.pets__img-3 {
+  max-height: 650px;
+  width: 100%;
+}
+
+.pets__img-4 {
+  max-height: 280px;
+  width: 100%;
+}
+
+.pets__img-5 {
+  max-height: 280px;
+  width: 100%;
+}
+
+.pets__img-6 {
+  max-height: 280px;
+  width: 100%;
 }
 
 .pets__fig-1 {
@@ -60,16 +88,14 @@
   line-height: 26px;
 }
 
-/* @media (max-width: 1024px) {
-
+@media (max-width: 1024px) {
   .pets {
-    padding-top: 38px;
-    padding-bottom: 102px;
+    padding-top: 38.5px;
+    padding-bottom: 80px;
   }
 
   .pets__container {
-    max-width: 880px;
-    margin: 0 auto;
+    width: 880px;
   }
 
   .pets__title {
@@ -81,88 +107,101 @@
   .pets__wrapper {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: auto;
-    column-gap: 40px;
-    row-gap: 20px;
+    grid-template-rows: 235px 338px;
+    row-gap: 40px;
+    column-gap: 20px;
   }
-
+  
   .pets__img {
     margin-bottom: 10px;
     display: block;
+    max-height: 201px;
   }
-  
+
   .pets__img-1 {
     max-height: 201px;
-
+    width: 100%;
   }
-
+  
   .pets__img-2 {
     max-height: 201px;
-
+    width: 100%;
   }
-
+  
+  .pets__img-3 {
+    max-height: 536px;
+    width: 100%;
+  }
+  
   .pets__img-4 {
     max-height: 180px;
-
+    width: 100%;
   }
-
+  
   .pets__img-5 {
     max-height: 180px;
-
+    width: 100%;
   }
-
+  
   .pets__img-6 {
     max-height: 280px;
-
+    width: 100%;
   }
-
-  .pets__img-3 {
-    max-height: 478px;
-
+  
+  .pets__fig-1 {
+    grid-column: 1 / 5;
   }
-
-  .pets__fig-1 { grid-column: 1 / 5; }
-  .pets__fig-2 { grid-column: 5 / 7; }
-  .pets__fig-3 { grid-column: 7 / 10; grid-row: 1 / 3; }
-  .pets__fig-4 { grid-column: 1 / 3; }
-  .pets__fig-5 { grid-column: 3 / 5; }
-  .pets__fig-6 { grid-column: 5 / 7; }
+  
+  .pets__fig-2 {
+    grid-column: 5 / 7;
+  }
+  
+  .pets__fig-3 {
+    grid-column: 7 / 10;
+    grid-row: 1 / 3;
+  }
+  
+  .pets__fig-4 {
+    grid-column: 1 / 3;
+  }
+  
+  .pets__fig-5 {
+    grid-column: 3 / 5;
+  }
+  
+  .pets__fig-6 {
+    grid-column: 5 / 7;
+  }
   
   .pets__figcaption {
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
   }
-} */
+}
 
-@media (max-width: 768px){
-
-  body {
-    background-color: red; /* Это должно изменить цвет фона на красный при ширине экрана менее 768px */
-  }
+@media (max-width: 768px) {
   .pets {
     padding-top: 31px;
     padding-bottom: 60px;
   }
 
   .pets__container {
-    max-width: 700px;
-    margin: 0 auto;
+    width: 700px;
   }
 
   .pets__title {
     font-size: 30px;
     line-height: 34px;
-    color: var(--color-text-main);
     margin-bottom: 40px;
   }
   
   .pets__wrapper {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 280px 357px 725px;
-    row-gap: 46px;
-    column-gap: 37px;
+    grid-template-rows: 282px 384px 726px;
+    row-gap: 30px;
+    column-gap: 24px;
   }
   
   .pets__img {
@@ -171,57 +210,61 @@
     max-height: unset;
   }
 
-  .pets__img_1 {
-    max-height: 243px;
-  }
-
-  .pets__img_2 {
+  .pets__img-1 {
     height: 243px;
+    width: 460px;
   }
 
-  .pets__img_3 {
+  .pets__img-2 {
+    height: 243px;
+    width: 216px;
+  }
+
+  .pets__img-3 {
     max-height: 647px;
+    width: 379px;
   }
 
-  .pets__img_4 {
+  .pets__img-4 {
     height: 332px;
     width: 332px;
   }
 
-  .pets__img_5 {
+  .pets__img-5 {
     height: 332px;
     width: 332px;
+    margin-left: -37px;
   }
 
-  .pets__img_6 {
+  .pets__img-6 {
     height: 459px;
     width: 294px;
   }
   
-  .pets__fig_1 {
+  .pets__fig-1 {
     grid-column: 1 / 6;
   }
   
-  .pets__fig_2 {
-    grid-column: 6 / 10;
+  .pets__fig-2 {
+    grid-column: 7/ 10;
   }
   
-  .pets__fig_3 {
+  .pets__fig-3 {
     grid-column: 5 / 10;
     grid-row: 3 / 4;
   }
   
-  .pets__fig_4 {
+  .pets__fig-4 {
     grid-column: 1 / 6;
     grid-row: 2 / 3;
   }
   
-  .pets__fig_5 {
+  .pets__fig-5 {
     grid-column: 6 / 10;
     grid-row: 2 / 3;
   }
   
-  .pets__fig_6 {
+  .pets__fig-6 {
     grid-column: 1 / 5;
     grid-row: 3 / 4;
   }
@@ -240,8 +283,7 @@
   }
 
   .pets__container {
-    max-width: 270px;
-    margin: 0 auto;
+    width: 270px;
   }
 
   .pets__title {
@@ -251,10 +293,9 @@
   }
   
   .pets__wrapper {
-    max-width: 270px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 214px 331px 516px 304px 453px 303px;
+    grid-template-rows: 214px 334px 518px 304px 454px 304px;
     row-gap: 20px;
   }
   
@@ -264,32 +305,32 @@
     max-height: unset;
   }
   
-  .pets__fig_1 {
+  .pets__fig-1 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
   
-  .pets__fig_2 {
+  .pets__fig-2 {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
   }
   
-  .pets__fig_3 {
+  .pets__fig-3 {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
   }
   
-  .pets__fig_4 {
+  .pets__fig-4 {
     grid-row: 6 / 7;
     grid-column: 1 / 2;
   }
   
-  .pets__fig_5 {
+  .pets__fig-5 {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
   }
   
-  .pets__fig_6 {
+  .pets__fig-6 {
     grid-row: 5 / 6;
     grid-column: 1 / 2;
   }
@@ -298,28 +339,35 @@
     object-fit: cover;
   }
 
-  .pets__img_1 {
-    height: 184px;
+  .pets__img-1 {
+    max-height: 184px;
+    width: 100%;
   }
 
-  .pets__img_2 {
+  .pets__img-2 {
     height: 300px;
+    width: 100%;
   }
 
-  .pets__img_3 {
+  .pets__img-3 {
     max-height: 460px;
+    width: 100%;
   }
 
-  .pets__img_4 {
+  .pets__img-4 {
     height: 270px;
+    width: 100%;
   }
 
-  .pets__img_5 {
+  .pets__img-5 {
     height: 270px;
+    width: 100%;
+    margin: 0;
   }
 
-  .pets__img_6 {
+  .pets__img-6 {
     height: 420px;
+    width: 100%;
   }
   
   .pets__figcaption {
