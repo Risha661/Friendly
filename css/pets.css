@@ -169,7 +169,7 @@
   .pets__title {
     font-size: 30px;
     line-height: 34px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   
   .pets__wrapper {
@@ -177,41 +177,16 @@
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 282px 384px 726px;
     row-gap: 30px;
-    column-gap: 24px;
-  }
-  
-  .pets__img {
-    margin-bottom: 10px;
-    display: block;
-    max-height: unset;
-  }
-
-  .pets__img-1 {
-    height: 243px;
-  }
-
-  .pets__img-2 {
-    height: 243px;
-  }
-
-  .pets__img-3 {
-    max-height: 647px;
-  }
-
-  .pets__img-4 {
-    height: 332px;
-  }
-
-  .pets__img-5 {
-    height: 332px;
-  }
-
-  .pets__img-6 {
-    height: 459px;
+    column-gap: 27px;
   }
   
   .pets__fig-1 {
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
+  }
+
+  .pets__img-1 {
+    max-height: 86%;
+    margin-right: 10px;
   }
   
   .pets__fig-2 {
@@ -222,15 +197,31 @@
     grid-column: 5 / 10;
     grid-row: 3 / 4;
   }
-  
+
   .pets__fig-4 {
     grid-column: 1 / 6;
     grid-row: 2 / 3;
+    max-width: 332px;
+    max-height: 384px;
   }
   
   .pets__fig-5 {
     grid-column: 6 / 10;
     grid-row: 2 / 3;
+    max-width: 331px;
+    max-height: 384px;
+  }
+
+  .pets__img-3 {
+    margin-bottom: 14px;
+  }
+
+  .pets__img-4 {
+    height: 86%;
+  }
+
+  .pets__img-5 {
+    height: 86%;
   }
   
   .pets__fig-6 {
@@ -242,6 +233,10 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .pets__figcaption-6 {
+    max-width: 170px;
   }
 }
 
@@ -271,7 +266,8 @@
   .pets__img {
     margin-bottom: 10px;
     display: block;
-    max-height: unset;
+    object-fit: cover;
+    height: 100%;
   }
   
   .pets__fig-1 {
@@ -304,43 +300,38 @@
     grid-column: 1 / 2;
   }
 
-  .pets__img {
-    object-fit: cover;
-  }
-
   .pets__img-1 {
-    max-height: 184px;
+    max-height: 86%;
     width: 100%;
   }
 
   .pets__img-2 {
-    height: 300px;
-    width: 100%;
+    height: 90%;
   }
 
   .pets__img-3 {
-    max-height: 460px;
-    width: 100%;
+    height: auto;
   }
 
   .pets__img-4 {
-    height: 270px;
-    width: 100%;
+    height: auto;
   }
 
   .pets__img-5 {
-    height: 270px;
-    width: 100%;
-    margin: 0;
+    height: auto;
   }
 
   .pets__img-6 {
-    height: 420px;
-    width: 100%;
+    height: auto;
   }
   
   .pets__figcaption {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .pets__figcaption-3 {
+    max-width: 178px;
+    line-height: 22px;
   }
 }

@@ -163,9 +163,9 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 550px) {
   .project {
-    padding: 40px 0 46px 0;
+    padding: 40px 0 37px 0;
   }
 
   .container {
