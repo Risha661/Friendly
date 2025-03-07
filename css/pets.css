@@ -4,7 +4,7 @@
 
 .pets__container {
   position: relative;
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -29,32 +29,26 @@
 
 .pets__img-1 {
   max-height: 276px;
-  width: 100%;
 }
 
 .pets__img-2 {
   max-height: 276px;
-  width: 100%;
 }
 
 .pets__img-3 {
   max-height: 650px;
-  width: 100%;
 }
 
 .pets__img-4 {
   max-height: 280px;
-  width: 100%;
 }
 
 .pets__img-5 {
   max-height: 280px;
-  width: 100%;
 }
 
 .pets__img-6 {
   max-height: 280px;
-  width: 100%;
 }
 
 .pets__fig-1 {
@@ -94,7 +88,7 @@
   }
 
   .pets__container {
-    width: 880px;
+    max-width: 880px;
     margin: 0 auto;
   }
 
@@ -186,7 +180,7 @@
   }
 
   .pets__container {
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
   }
 
@@ -212,33 +206,27 @@
 
   .pets__img-1 {
     height: 243px;
-    width: 460px;
   }
 
   .pets__img-2 {
     height: 243px;
-    width: 216px;
   }
 
   .pets__img-3 {
     max-height: 647px;
-    width: 379px;
   }
 
   .pets__img-4 {
     height: 332px;
-    width: 332px;
   }
 
   .pets__img-5 {
     height: 332px;
-    width: 332px;
     margin-left: -37px;
   }
 
   .pets__img-6 {
     height: 459px;
-    width: 294px;
   }
   
   .pets__fig-1 {

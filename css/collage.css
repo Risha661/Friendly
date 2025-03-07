@@ -12,6 +12,10 @@
   margin-bottom: 22px;
 }
 
+.collage__img {
+  height: auto;
+}
+
 .collage__list {
   display: grid;
   grid-template-columns: repeat(4, 80px);
@@ -20,7 +24,6 @@
   column-gap: 20px;
   justify-content: center;
   align-items: center;
-  max-width: 380px;
 }
 
 .collage__link-view {
@@ -31,7 +34,7 @@
   .collage__title {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
 
   .collage__list {
@@ -44,7 +47,7 @@
   .collage__container-link {
     display: grid;
     grid-template-columns: 1fr auto;
-    align-items: center;
+    align-items: end;
   }
   
   .collage__item-display {
@@ -66,7 +69,7 @@
     display: inline-block;
     background-image: url("../img/right-arrow.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
     width: 25px;
     height: 16px;
     margin-left: 15px;
@@ -97,7 +100,7 @@
     max-height: 52px;
   }
 }
-
+ 
 @media (max-width: 320px) {
   .collage__title {
     font-size: 14px;

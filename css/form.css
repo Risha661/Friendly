@@ -63,7 +63,7 @@
   height: 18px;
   background-image: url("/img/call.svg");
   margin-right: 14px;
-  background-size: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
 }
 
@@ -83,7 +83,7 @@
   height: 16px;
   background-image: url("/img/Vector.svg");
   margin-right: 14px;
-  background-size: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
 }
 

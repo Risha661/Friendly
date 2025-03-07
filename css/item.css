@@ -15,7 +15,6 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  max-width: 380px;
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 58px;
@@ -37,7 +36,7 @@
   content: "";
   background-image: url("../img/right-arrow.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
   width: 25px;
   height: 16px;
   margin-left: 15px;
@@ -45,10 +44,8 @@
 
 @media (max-width: 1024px) {
   .item__description {
-    max-width: 360px;
     font-size: 18px;
     line-height: 26px;
-    max-height: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -65,7 +62,6 @@
 
   .item__img {
     height: 130px;
-    width: 200px;
     object-fit: cover;
   }
 }
@@ -92,11 +88,11 @@
 
   .item__img {
     height: 104px;
-    width: 160px;
+    max-width: 160px;
     object-fit: cover;
   }
 }
-
+ 
 @media (max-width: 320px) {
   .item__description {
     max-width: 130px;
@@ -114,7 +110,7 @@
 
   .item__img {
     height: 134px;
-    width: 130px;
+    max-width: 130px;
     object-fit: cover;
   }
 }
