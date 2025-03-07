@@ -1,7 +1,6 @@
 .collage {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  max-width: 380px;
 }
 
 .collage__title {
@@ -13,13 +12,14 @@
 }
 
 .collage__img {
+  width: 100%;
   height: auto;
 }
 
 .collage__list {
   display: grid;
-  grid-template-columns: repeat(4, 80px);
-  grid-template-rows: repeat(3, 70px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 20px;
   column-gap: 20px;
   justify-content: center;
@@ -38,10 +38,9 @@
   }
 
   .collage__list {
-    grid-template-columns: repeat(3, 80px);
-    grid-template-rows: repeat(2, 70px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
-    max-width: 280px;
   }
 
   .collage__container-link {
@@ -84,20 +83,14 @@
   }
 
   .collage__list {
-    grid-template-columns: repeat(3, 60px);
-    grid-template-rows: repeat(2, 52px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 18px;
-    max-width: 220px;
   }
 
   .collage__item-display {
     display: none;
-  }
-
-  .collage__img {
-    width: 100%;
-    max-height: 52px;
   }
 
   .collage__link-view {
@@ -113,10 +106,9 @@
   }
 
   .collage__list {
-    grid-template-columns: repeat(4, 60px);
-    grid-template-rows: 53px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     gap: 10px;
-    max-width: 270px;
   }
 
   .collage__item-display,

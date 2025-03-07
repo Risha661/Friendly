@@ -17,7 +17,6 @@
   line-height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 58px;
 }
 
 .item__link,
@@ -61,17 +60,14 @@
   }
 
   .item__img {
-    height: 130px;
     object-fit: cover;
   }
 }
 
 @media (max-width: 768px) {
   .item__description {
-    max-width: 230px;
     font-size: 14px;
     line-height: 20px;
-    max-height: 38px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -87,16 +83,12 @@
   }
 
   .item__img {
-    height: 104px;
-    max-width: 160px;
     object-fit: cover;
   }
 }
  
 @media (max-width: 320px) {
   .item__description {
-    max-width: 130px;
-    max-height: 38px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -109,8 +101,6 @@
   }
 
   .item__img {
-    height: 134px;
-    max-width: 130px;
     object-fit: cover;
   }
 }

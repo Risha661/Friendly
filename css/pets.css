@@ -152,7 +152,6 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
-    max-width: 220px;
   }
 }
 
@@ -163,6 +162,7 @@
 
   .pets__container {
     max-width: 700px;
+
     margin: 0 auto;
   }
 
