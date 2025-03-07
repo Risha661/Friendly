@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .banner {
     max-width: 220px;
     max-height: 271px;
@@ -89,6 +89,7 @@
   .banner__title {
     line-height: 22px;
     max-width: 250px;
+    font-size: 16px;
   }
 
   .banner__link-view {
@@ -100,6 +101,6 @@
   }
 
   .banner__link {
-    bottom: 19px;
+    bottom: 23px;
   }
 }
