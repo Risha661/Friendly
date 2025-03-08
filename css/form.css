@@ -117,13 +117,11 @@
 .form__input {
   display: block;
   margin: auto;
-  width: 280px;
   height: 40px;
 }
 
 .form__btn {
   background: #282626;
-  width: 220px;
   height: 40px;
   font-family: HelveticaNeueCyr, sans-serif;
   font-size: 12px;
