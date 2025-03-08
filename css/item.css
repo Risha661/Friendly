@@ -4,10 +4,11 @@
   font-size: 30px;
   line-height: 40px;
   color: #282626;
+  padding-top: 3px;
 }
 
 .item__img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -15,9 +16,7 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 58px;
 }
 
 .item__link,
@@ -42,11 +41,10 @@
   margin-left: 15px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .item__description {
     font-size: 18px;
     line-height: 26px;
-    overflow: hidden;
     text-overflow: ellipsis;
   }
 
@@ -61,18 +59,14 @@
   }
 
   .item__img {
-    height: 130px;
     object-fit: cover;
   }
 }
 
 @media (max-width: 768px) {
   .item__description {
-    max-width: 230px;
     font-size: 14px;
     line-height: 20px;
-    max-height: 38px;
-    overflow: hidden;
     text-overflow: ellipsis;
   }
 
@@ -85,19 +79,10 @@
     font-size: 14px;
     line-height: 20px;
   }
-
-  .item__img {
-    height: 104px;
-    max-width: 160px;
-    object-fit: cover;
-  }
 }
- 
-@media (max-width: 320px) {
+
+@media (max-width: 520px) {
   .item__description {
-    max-width: 130px;
-    max-height: 38px;
-    overflow: hidden;
     text-overflow: ellipsis;
   }
 
@@ -106,11 +91,5 @@
     font-size: 16px;
     line-height: 22px;
     white-space: wrap;
-  }
-
-  .item__img {
-    height: 134px;
-    max-width: 130px;
-    object-fit: cover;
   }
 }

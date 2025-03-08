@@ -1,41 +1,135 @@
-* {
-  box-sizing: border-box;
+html {
+  /* box-sizing: border-box; */
+  position: relative;
 }
 
+* {
+  box-sizing: inherit;
+}
 
 body {
-  font-family: "HelveticaNeueCyr", serif;
-  font-weight: 300;
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--dark-grey);
+  font-family: HelveticaNeueCyr , sans-serif;
+  font-size: 20px;
+  font-style: normal;
   color: #282626;
+  font-weight: 300;
+  line-height: 30px;
 }
 
 h1, h2, h3, h4, p, figure, fieldset {
   margin: 0;
+  padding: 0;
 }
 
-h2 {
-  font-family: Comfortaa, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 40px;
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-p {
-  font-size: 20px;
-  font-weight: 300;
-  text-align: left;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-ul, ol {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ol {
-  list-style-type: none;
-  counter-reset: myCounter;
+li {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+#about {
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: left;
+  margin-bottom: 50px;
+  color: #282626;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+legend, label, input {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border:0 none;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    max-width: 880px;
+    padding: 0 72px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+    padding: 0 34px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 30px;
+  } 
+}
+
+@media (max-width: 520px) {
+.container {
+    max-width: 270px;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
 }
 
 li .help__item:before {
@@ -46,17 +140,4 @@ li .help__item:before {
   text-align: center;
   color: #FF8A00;
   margin: 0px 20px 0px -50px;
-}
-
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
 }

@@ -1,7 +1,6 @@
 .collage {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  max-width: 380px;
 }
 
 .collage__title {
@@ -30,7 +29,7 @@
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .collage__title {
     font-size: 18px;
     line-height: 24px;
@@ -41,7 +40,6 @@
     grid-template-columns: repeat(3, 80px);
     grid-template-rows: repeat(2, 70px);
     gap: 20px;
-    max-width: 280px;
   }
 
   .collage__container-link {
@@ -88,7 +86,6 @@
     grid-template-rows: repeat(2, 52px);
     column-gap: 20px;
     row-gap: 18px;
-    max-width: 220px;
   }
 
   .collage__item-display {
@@ -97,7 +94,6 @@
 
   .collage__img {
     width: 100%;
-    max-height: 52px;
   }
 
   .collage__link-view {
@@ -105,7 +101,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 520px) {
   .collage__title {
     font-size: 14px;
     line-height: 20px;
@@ -116,7 +112,6 @@
     grid-template-columns: repeat(4, 60px);
     grid-template-rows: 53px;
     gap: 10px;
-    max-width: 270px;
   }
 
   .collage__item-display,
