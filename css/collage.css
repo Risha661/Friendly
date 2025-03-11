@@ -74,7 +74,17 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .collage-ontainer-link {
+    max-width: 280px;
+  }
+
+  .collage__title {
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 800px) {
   .collage__title {
     font-size: 14px;
     line-height: 20px;
