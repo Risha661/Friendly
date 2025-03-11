@@ -135,9 +135,9 @@
 
 @media (max-width: 520px) {
   .project {
-    padding: 40px 0 37px 0;
+    padding: 40px 0 51px 0;
   }
-  
+
   .project__wrapper-grid {
     padding-top: 0;
     row-gap: 30px;
