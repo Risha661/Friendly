@@ -1,0 +1,91 @@
+.banner {
+  position: relative;
+  background-image: url("../img/two-dogs.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.banner__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  max-width: 298px;
+}
+
+.banner__title-white {
+  position: absolute;
+  bottom: 40px;
+  color: #FFF;
+  left: 10px;
+}
+
+.banner__link {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .banner__title {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 260px;
+  }
+
+  .banner__title-white {
+    bottom: 49px;
+    left: 10px;
+  }
+
+  .banner__link {
+    font-size: 18px;
+    line-height: 26px;
+    bottom: 9px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__title {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 200px;
+  }
+
+  .banner__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .banner__title-white {
+    bottom: 39px;
+  }
+
+  .banner__link {
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner__title {
+    line-height: 22px;
+    max-width: 250px;
+    font-size: 16px;
+  }
+
+  .banner__link-view {
+    padding-top: 8px;
+  }
+
+  .banner__title-white {
+    bottom: 51px;
+  }
+
+  .banner__link {
+    bottom: 23px;
+  }
+}

@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "HelveticaNeueCyr", serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #282626;
+}
+
+h1, h2, h3, h4, p, figure, fieldset {
+  margin: 0;
+}
+
+h2 {
+  font-family: Comfortaa, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: myCounter;
+}
+
+li .help__item:before {
+  content: counter(myCounter);
+  counter-increment: myCounter;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  color: #FF8A00;
+  margin: 0px 20px 0px -50px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}

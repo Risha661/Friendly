@@ -1,0 +1,124 @@
+.collage {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.collage__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000;
+  margin-bottom: 22px;
+}
+
+.collage__img {
+  width: 100%;
+  height: auto;
+}
+
+.collage__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.collage__link-view {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .collage__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .collage__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .collage__container-link {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+  
+  .collage__item-display {
+    display: none;
+  }
+
+  .collage__link-view {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FF8A00;
+    padding-top: 24px;
+    text-align: right;
+  }
+  
+  .collage__link-view::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/right-arrow.svg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 25px;
+    height: 16px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collage__title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .collage__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 18px;
+  }
+
+  .collage__item-display {
+    display: none;
+  }
+
+  .collage__link-view {
+    padding-top: 6px;
+  }
+}
+
+@media (max-width: 320px) {
+  .collage__title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 11px;
+  }
+
+  .collage__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  .collage__item-display,
+  .collage__item-none {
+    display: none;
+  }
+
+  .collage__link-view {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 6px;
+  }
+}
